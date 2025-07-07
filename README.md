@@ -54,5 +54,5 @@ ollama serve
 From the project root run:
 
 ```
-python -m src.ch1.p_5
+python -m src.ch01.p_05
 ```
