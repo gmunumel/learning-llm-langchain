@@ -1,0 +1,23 @@
+[project]
+name = "learning-llm-langchain"
+version = "0.1.0"
+description = "This project is to explore LLM models using LangChain following the book 'Learning LangChain'"
+authors = [
+    { name="Gabriel Munumel", email="gabrielmunumel@gmail.com" }
+]
+
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+
+dependencies = [
+    "langchain",
+    "langchain-openai",
+    "langchain-community",
+    "langchain-text-splitters",
+    "langchain-postgres",
+    "langchain-ollama"
+]
+
+[tool.pylint]
+disable = "E0401, C0114, C0115, C0116, W0107"
