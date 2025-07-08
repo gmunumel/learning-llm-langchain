@@ -16,7 +16,9 @@ dependencies = [
     "langchain-community",
     "langchain-text-splitters",
     "langchain-postgres",
-    "langchain-ollama"
+    "langchain-ollama",
+    "psycopg",
+    "lark"
 ]
 
 [tool.pylint]

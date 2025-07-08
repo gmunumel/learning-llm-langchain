@@ -49,10 +49,20 @@ Run ollama server:
 ollama serve
 ```
 
+## Run `pgvector`
+
+`pgvector` is a Postgres database that is able to handle embeddings.
+
+Run it as:
+
+```
+docker compose up
+```
+
 ## Run Files
 
 From the project root run:
 
 ```
-python -m src.ch01.p_05
+python -m src.ch01.p_05_llm
 ```
