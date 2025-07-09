@@ -8,7 +8,7 @@ from src.open_ai import open_ai
 # replace this with the connection details of your db
 
 
-db = SQLDatabase.from_uri("sqlite:///resources/Chinook.db")
+db = SQLDatabase.from_uri("sqlite:///resources/artifacts/Chinook.db")
 print(db.get_usable_table_names())
 # llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
 

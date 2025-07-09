@@ -66,3 +66,13 @@ From the project root run:
 ```
 python -m src.ch01.p_05_llm
 ```
+
+## Run Jupyter Notebook
+
+From the project root run:
+
+```
+jupyter notebook
+```
+
+Then in a web browser open: [http://localhost:8888/notebooks/src/notebooks/demo.ipynb](http://localhost:8888/notebooks/src/notebooks/demo.ipynb)

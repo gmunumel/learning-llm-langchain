@@ -12,7 +12,7 @@ from src.open_ai import open_ai_embeddings
 CONNECTION = "postgresql+psycopg://vectoruser:vectorpass@localhost:5432/vectordb"
 
 # Load the document, split it into chunks
-raw_documents = TextLoader("resources/test.txt", encoding="utf-8").load()
+raw_documents = TextLoader("resources/artifacts/test.txt", encoding="utf-8").load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 documents = text_splitter.split_documents(raw_documents)
 

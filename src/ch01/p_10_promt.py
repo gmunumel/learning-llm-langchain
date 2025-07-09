@@ -2,7 +2,7 @@ from langchain_core.messages import BaseMessage
 from langchain_core.prompts import PromptTemplate
 
 from src.ollama import ollama
-from src.strategy_model import ModelStrategy, model_strategy, run_model_invoke
+from src.strategy_model import ModelStrategy, model_strategy, run_model
 
 
 @model_strategy("ollama")
@@ -32,5 +32,5 @@ user_prompt = template.invoke(
         "question": "Which model providers offer LLMs?",
     }
 )
-result = run_model_invoke("ollama", user_prompt)
+result = run_model("ollama", user_prompt)
 print(result)

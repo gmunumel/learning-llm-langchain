@@ -1,7 +1,7 @@
 from langchain_core.messages import BaseMessage, HumanMessage
 
 from src.ollama import ollama
-from src.strategy_model import ModelStrategy, model_strategy, run_model_invoke
+from src.strategy_model import ModelStrategy, model_strategy, run_model
 
 
 @model_strategy("ollama")
@@ -11,7 +11,5 @@ class OllamaModel(ModelStrategy):
         return response
 
 
-result = run_model_invoke(
-    "ollama", [HumanMessage(content="What is the capital of Spain?")]
-)
+result = run_model("ollama", [HumanMessage(content="What is the capital of Spain?")])
 print(result)

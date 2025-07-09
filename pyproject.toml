@@ -18,7 +18,10 @@ dependencies = [
     "langchain-postgres",
     "langchain-ollama",
     "psycopg",
-    "lark"
+    "lark",
+    "langgraph",
+    "duckduckgo-search",
+    "notebook"
 ]
 
 [tool.pylint]

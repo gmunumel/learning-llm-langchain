@@ -5,7 +5,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from src.open_ai import open_ai_embeddings
 
 # Load the document
-loader = TextLoader("resources/test.txt", encoding="utf-8")
+loader = TextLoader("resources/artifacts/test.txt", encoding="utf-8")
 doc = loader.load()
 
 # Split the document

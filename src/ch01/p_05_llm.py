@@ -1,6 +1,6 @@
 from src.ollama import ollama
 from src.open_ai import open_ai
-from src.strategy_model import ModelStrategy, model_strategy, run_model_invoke
+from src.strategy_model import ModelStrategy, model_strategy, run_model
 
 
 @model_strategy("openai")
@@ -17,9 +17,9 @@ class OllamaModel(ModelStrategy):
         return response.model_dump()
 
 
-result = run_model_invoke("openai", "What is the capital of France?")
+result = run_model("openai", "What is the capital of France?")
 print(result)
 
 
-result = run_model_invoke("ollama", "What is the capital of Spain?")
+result = run_model("ollama", "What is the capital of Spain?")
 print(result)

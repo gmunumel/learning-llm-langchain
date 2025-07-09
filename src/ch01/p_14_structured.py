@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 from src.ollama import ollama
-from src.strategy_model import ModelStrategy, model_strategy, run_model_invoke
+from src.strategy_model import ModelStrategy, model_strategy, run_model
 
 
 class AnswerWithJustification(BaseModel):
@@ -22,7 +22,7 @@ class OllamaModel(ModelStrategy):
         return response.model_dump()  # type: ignore[return-value]
 
 
-result = run_model_invoke(
+result = run_model(
     "ollama", "What weighs more, a pound of bricks or a pound of feathers"
 )
 print(result)
